@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & ML Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI & ML Knowledge Portal</h1>
+        <nav>
+            <button id="read-article-btn" onclick="showArticle()">Read Article</button>
+            <button id="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+        </nav>
+    </header>
+    <main>
+        <section id="article-section" class="hidden">
+            <h2>Understanding Artificial Intelligence (AI) and the Machine Learning (ML) Pipeline</h2>
+            <div class="article-content">
+                <p><strong>Introduction to AI:</strong> Artificial Intelligence (AI) refers to the simulation of human intelligence in machines programmed to think, reason, and learn. AI powers systems like virtual assistants, autonomous vehicles, and recommendation systems. The goal of AI is to enable machines to perform tasks that typically require human intelligence, such as understanding natural language, recognizing patterns, and solving problems.</p>
+                <p><strong>What is Machine Learning (ML)?</strong> Machine Learning (ML) is a subset of AI that focuses on building systems that learn from data. Instead of being explicitly programmed to perform tasks, ML models learn patterns in data and make predictions or decisions.</p>
+                <p><strong>The ML Pipeline:</strong></p>
+                <ul>
+                    <li><strong>Data Collection:</strong> Gather relevant data like text, images, or numerical values.</li>
+                    <li><strong>Data Preprocessing:</strong> Clean, normalize, and scale the data for uniformity.</li>
+                    <li><strong>Feature Engineering:</strong> Select or create features for training the model.</li>
+                    <li><strong>Model Selection:</strong> Choose the appropriate ML algorithm based on the problem.</li>
+                    <li><strong>Model Training:</strong> Train the model using a training dataset.</li>
+                    <li><strong>Model Evaluation:</strong> Test the model's performance on a separate dataset.</li>
+                    <li><strong>Deployment:</strong> Deploy the trained model to a production environment.</li>
+                    <li><strong>Monitoring and Maintenance:</strong> Continuously monitor and update the model.</li>
+                </ul>
+                <p><strong>Challenges in ML:</strong> Data quality, overfitting, and bias are common issues in machine learning. AI and ML are evolving fields that require ongoing learning and experimentation.</p>
+            </div>
+        </section>
+        <section id="quiz-section" class="hidden">
+            <div id="timer" class="card">Time Remaining: <span id="time-remaining">05:00</span></div>
+            <div id="quiz-container" class="card">
+                <!-- Quiz content dynamically generated here -->
+            </div>
+            <div id="quiz-navigation">
+                <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+                <button id="next-btn" onclick="nextQuestion()">Next</button>
+                <button id="submit-btn" onclick="submitQuiz()">Submit</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 AI & ML Knowledge Portal</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
